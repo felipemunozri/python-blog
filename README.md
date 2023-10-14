@@ -7,6 +7,6 @@ The application is writen entirely on Python using Flask as framework and a sqli
 It features:
 
 - Blog content management.
-- Users management. Visitors can create accounts and comment on posts.
-- Password reset via secure tokens.
+- Visitors can create accounts and comment on posts.
 - Integration with Gravatar.
+- Users can reset their password via secure token.
