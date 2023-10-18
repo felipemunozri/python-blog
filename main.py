@@ -124,7 +124,7 @@ Message: {data["message"]}
 # ----------------------------------------- DB & TABLES ----------------------------------------- #
 
 # CONNECT TO DB
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DB_URI', 'sqlite:///posts.db')
 db = SQLAlchemy(app)
 
 salt = ""
