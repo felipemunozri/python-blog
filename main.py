@@ -124,6 +124,8 @@ Message: {data["message"]}
 # ----------------------------------------- DB & TABLES ----------------------------------------- #
 
 # CONNECT TO DB
+# DB_URI should be set as the database URI in the environment variables file. As an alternative default value we use the
+# development sqlite URI
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DB_URI', 'sqlite:///posts.db')
 db = SQLAlchemy(app)
 
